@@ -1,0 +1,354 @@
+.carysel-contnt{
+background:#4E443C;
+    min-width: 768px;
+    position: relative;
+	}
+	.home .logo{
+	height: auto;
+	}
+	.home .logo h1{
+	   color: #f14e32;
+    font-size: 100px;
+    font-weight: 700;
+    letter-spacing: -3px;
+    line-height: 100%;
+    margin: 30px 0 0;
+    text-align: center;
+	}
+	.home .logo h2{
+	 border: 0 none;
+    color: #9a9994;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 auto 30px;
+    max-width: 300px;
+    padding: 0;
+    text-align: center;
+	}
+	
+	@media (max-width: 600px) {
+.home .logo h1 {
+    font-size: 50px;
+    letter-spacing: -2px;
+}
+.home .logo h2 {
+    font-size: 12px;
+}
+}
+body {
+    background-color:#F5EFEF;
+    color: #4e443c;
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    text-shadow: 0 1px 0 #fff;
+}
+.home .content, .home .footer {
+    text-align: center;
+}
+.wrapper {
+    width: 100%;
+}
+.logo{
+   background: #f0efe7;
+    height: 80px;
+    min-width: 768px;
+    position: relative;
+}
+.carysel-contnt{
+    background: #4e443c;
+    min-width: 768px;
+	width: 100%;
+    position: relative;
+	display: block;
+    height: 390px;
+    overflow: hidden;
+}
+.shadow{
+  display: block;
+    height: 320px;
+    overflow: hidden;
+	padding: 35px 0;
+	 margin: auto;
+    max-width: 900px;
+    position: relative;
+	
+}
+.carousel  {
+   max-width: 1080px; /* ширина всего блока */
+   margin: 50px auto;
+   width:100%;
+}
+.carousel-wrapper {
+   margin: 10px 30px; /* отступы для стрелок */
+   overflow: hidden; /* скрываем содержимое, выходящее за рамки основной области */
+   position:relative;
+}
+.carousel-items {
+   
+   position: relative; /* позиционируем блок относительно основной области карусели */
+}
+.carousel-block {
+   float: left; /* выстраиваем все элементы карусели в ряд */
+   
+   padding: 10px 10px 10px 0px; /* делаем оступы, чтобы элементы не сливались */
+}
+.carousel-block img{
+	display:block;
+}
+.photo-credits {
+    bottom: 0;
+    color: #fff;
+    font-size: 13px;
+    opacity: 0.66;
+    position: absolute;
+    right: 15px;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
+}
+.photo-credits a {
+    color: #fff;
+}
+.jcarousel-pagination {
+    bottom: 10px;
+    left: 50%;
+    margin: 0 0 0 -22px;
+    position: absolute;
+}
+.jcarousel-pagination a.active {
+    background: #4e443c none repeat scroll 0 0;
+    box-shadow: 0 0 2px #f0efe7;
+    color: #fff;
+    opacity: 1;
+}
+.jcarousel-pagination a {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 10px;
+    box-shadow: 0 0 2px #4e443c;
+    color: #4e443c;
+    display: inline-block;
+    font-size: 11px;
+    height: 10px;
+    line-height: 10px;
+    margin-right: 7px;
+    text-decoration: none;
+    text-indent: -9999px;
+    width: 10px;
+}
+.show-content{
+border: 10px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 2px #999;
+    position: relative;
+	 max-width: 980px;
+	 height: 300px;
+}
+.carousel-wrapper{
+   overflow: hidden;
+    position: relative;
+	
+}
+.carousel-wrapper ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 20000em;
+}
+.carousel-wrapper ul  li{
+   width: 880px;
+}
+/*********** BUTTONS ***********/
+.carousel-button-left a, .carousel-button-right a{
+   width: 25px; 
+   height: 36px; 
+   position: relative;
+   top: 80px; 
+   cursor: pointer; 
+   text-decoration:none;
+}
+.carousel-button-left a{
+   float: left; 
+   background: url(img/circle-left.png); 
+}
+.carousel-button-right a{
+   float: right;
+   background: url(img/circle-right.png); 
+}
+/*	=	CheckBox */
+/* Стилизируем чекбокс, точнее скрываем его */
+.check input[type=checkbox] {
+	position: absolute;
+	left: -10000px;
+}
+.check {
+	background-position: 0 3px;
+	padding-left: 25px;
+	cursor: pointer;
+	position: relative;
+}
+.check.active {
+	background-position: 0 -27px;
+}
+
+
+
+input[type=checkbox] {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+label {
+	cursor: pointer;
+}
+label:after {
+	content: " ";
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: url(img/checkbox-2.png);
+	position: relative;
+	top: 3px;
+	margin-left: 15px;
+}
+input[type=checkbox]:checked + label:after {
+background-position: 0 -17px;
+}
+label:hover:after {
+background-position: 0 -34px;
+}
+input[type=checkbox]:checked + label:hover:after {
+background-position: 0 -51px;
+}
+#liniya { 
+        width:30%; 
+        height:25%; 
+        background:#669900; 
+        float:left; 
+        margin-left:15px; 
+        text-align:center;
+        }
+		
+		
+		.main-navigation {
+    width: 100%;
+    height: 44px;
+    border: 1px dashed #a2d2cf;
+   background-color: rgb(255,100,100);
+    
+    top: 1%;
+    left: 28%;
+    margin: -22px 0 0 -445px;
+    position: absolute;
+}
+ 
+
+.content-ul{
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 35% 0 35%;
+}
+li{
+	background-color:#0CF;
+}
+.green{
+	background-color:#0F0;
+}
+.red{
+	background-color:#F00;
+}
+
+
+/* main menu styles */
+
+.nav,.nav ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.nav {
+    position:relative;
+}
+
+.nav ul {
+    height:0;
+    left:0;
+    overflow:hidden;
+    position:absolute;
+    top:46px;
+}
+
+.nav li {
+    float:left;
+    position:relative;
+}
+
+.nav li a {
+    -moz-transition:0.5s;
+    -o-transition:0.5s;
+    -webkit-transition:0.5s;
+   
+    color:#FFF;
+    display:block;
+    font-size:16px;
+    line-height:35px;
+    padding:5px 20px;
+    text-decoration:none;
+    transition:0.5s;
+}
+
+.nav li:hover > a {
+    background:#8CCA33;
+    border-color:#6E67A6;
+    color:#fff;
+}
+
+.nav li:hover ul.subs {
+    height:auto;
+    width:180px;
+}
+
+.nav ul li {
+    -moz-transition:0.5s;
+    -o-transition:0.5s;
+    -webkit-transition:0.5s;
+    opacity:0;
+    transition:0.5s;
+    width:100%;
+}
+
+.nav li ul li {
+    -moz-transition-delay:0s;
+    -o-transition-delay:0s;
+    -webkit-transition-delay:0s;
+    transition-delay:0s;
+}
+
+.nav li:hover ul li {
+    opacity:1;
+    -moz-transition-delay:0.5s;
+    -o-transition-delay:0.5s;
+    -webkit-transition-delay:0.5s;
+    transition-delay:0.5s;
+}
+
+.nav ul li a {
+    background:#7770B4;
+    border-color:#6E67A6;
+    color:#fff;
+    line-height:1px;
+    -moz-transition:1.5s;
+    -o-transition:1.5s;
+    -webkit-transition:1.5s;
+    transition:1.5s;
+}
+
+.nav li:hover ul li a {
+    line-height:35px;
+}
+
+.nav ul li a:hover {
+    background:#8CCA33;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0)));
+    background-image: -moz-linear-gradient(-90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    background-image: -o-linear-gradient(-90deg,rgba(255,255,255,0.5),rgba(255,255,25,0));
+}

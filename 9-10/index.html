@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Karusel</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	 
+	<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- подключаем последнюю версию jQuery -->
+	 <script src="js/script.js"></script>
+	 <script src="js/jquery.fs.selecter.min.js"></script>
+	 <link href="css/style.css" rel="stylesheet"/>
+	  <link href="css/jquery.fs.selecter.css" rel="stylesheet"/>
+	 <!--<script src="js/jquery.slidecarousel.js"></script>плагин карусели-->
+	 <!--<span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"путь_к_файлу/jquery.formstyler.css"</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"путь_к_файлу/jquery.formstyler.min.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>-->
+
+<link href="css/jquery.formstyler.css" rel="stylesheet" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+<script type="text/javascript"> 
+$('input, select').styler({ 
+idSuffix:'-select', // Суффикс, добавляемый к ID стандартного элемента. Т.е., если его id "test", то у стилизованного элемента он будет "test-select". 
+browseText:'Файл не выбран...', // Текст кнопки у загрузчика файлов. 
+selectVisibleOptions:5, // Кол-во отображаемых пунктов в селекте без прокрутки. 
+singleSelectzIndex:50, // Уровень слоя с псевдоселектом. 
+selectSmartPositioning:true // "Умное" позиционирование выпадающего списка. 
+}); 
+
+(function($) { 
+$(function() { 
+  $('input, select').styler(); 
+}) 
+})(jQuery) 
+</script>
+<script type="text/javascript" src="js/jquery.color.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+
+jQuery("div").mouseenter(
+  function () {
+	jQuery(this).animate({
+		backgroundColor:"#03C",
+    }, 500 );
+});
+
+jQuery("div").mouseleave(function() {
+	jQuery(this).animate({
+		backgroundColor:"#0CF",
+    }, 500 );
+});
+
+});
+</script>
+
+
+ 
+</head>
+<body  class="home">
+<div class="wrapper">
+	 <!--<div data-role="page" id="home_page"> 
+	<div data-role="header">
+	    <h1>By Lena</h1>
+	</div>
+    <div class="promo-slider">
+		<div>
+			<img src="img/1.jpg"  />
+		</div>
+		<div>
+			<img src="img/2.jpg"  />
+		</div>
+         <div>
+			<img src="img/3.jpg"  />
+		</div>
+		<div>
+			<img src="img/2.jpeg"  />
+		</div>
+	</div>	
+	
+</div>-->
+<header class="logo">
+  <h1>jCarusel</h1>
+  <h2>Riding carousels with jQuery</h2>
+  <div class="main-navigation">
+  <div class="content-ul">
+    <ul class="nav">
+        <li><a href="#">Nav 1</a>
+ 
+            
+ 
+        </li>
+		<li><a href="#">Nav 2</a>
+ 
+            
+ 
+        </li>
+        <li><a href="#">Nav3</a>
+ 
+            <ul class="subs">
+                <li><a href="#">Nav 3.1</a></li>
+                <li><a href="#">Nav 3.2</a></li>
+                <li><a href="#">Nav 3.3</a></li>
+                <li><a href="#">Nav 3.4</a></li>
+                <li><a href="#">Nav 3.5</a></li>
+ 
+            </ul>
+ 
+        </li>
+        <li><a href="#">Nav 4</a>
+ 
+            
+ 
+        </li>
+        <li><a href="#">Nav 5</a>
+ 
+            
+        </li>
+    </ul>
+ 
+    </div>
+</div>
+</header>
+<div class="carysel-contnt">
+   <div class="shadow"> 
+      <div class="show-content">
+	  <p class="photo-credits">
+Photos by
+<a href="http://www.mw-fotografie.de">Marc Wiegelmann</a>
+</p>
+	  
+	  <div class="carousel shadow" style="margin-top: -20px; padding-top: 0px; padding-bottom: 0px; margin-bottom: 0px;"> 
+      <div class="carousel-button-left"><a href="#"><img  src="img/circle-left.png" alt="" /></a></div> 
+      <div class="carousel-button-right"><a href="#"><img  src="img/circle-right.png" alt="" /></a></div> 
+		<div class="carousel-wrapper"> 
+		   <div class="carousel-items"> 
+			  <div class="carousel-block">
+					<img width="830" height="300" src="img/1.jpg" alt="" />
+			  </div>
+			  <div class="carousel-block">
+					<img width="830" height="300" src="img/2.jpg" alt="" />
+			  </div>
+			  <div class="carousel-block">
+					<img width="830" height="300" src="img/3.jpg" alt="" />
+			  </div>
+			  
+		   </div>
+		   
+		</div>
+		<p class="jcarousel-pagination" data-jcarouselpagination="true">
+<a class="active" href="#1">1</a>
+<a href="#2">2</a>
+<a href="#3">3</a>
+</p>
+   </div>
+	  
+	  
+	  
+	  
+	  
+   </div>
+   </div>
+   </div>
+   <div style=" width:100%; height:1px; clear:both;"></div> 
+   <div id="liniya">
+       <select id="my_select">
+             <option value="value - 1">Item 1</option>
+             <option value="value - 2">Item 2</option>
+             <option value="value - 3">Item 3</option>
+       </select>
+       <div id="blokdiv"></div>
+   </div> 
+<div id="liniya">
+<div class="checkboxes">
+	<div class="check">
+		jQuery
+		<input type="checkbox" value="jQuery" />
+	</div>
+	<div class="check">
+		HTML
+		<input type="checkbox" value="HTML" />
+	</div>
+	<div class="check">
+		CSS
+		<input type="checkbox" value="CSS" />
+	</div>
+	<div class="check">
+		PHP
+		<input type="checkbox" value="PHP" />
+	</div>
+	<div class="check">
+		MySql
+		<input type="checkbox" value="MySql" />
+	</div>
+</div>
+</div> 
+
+<div id="liniya">
+<input type="checkbox" id="test-check1" />;
+<label for="test-check1">JAVA_CSS</label>
+</div>
+
+
+
+	 </div>
+
+</body>
+</html>

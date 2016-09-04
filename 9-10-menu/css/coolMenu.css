@@ -1,0 +1,26 @@
+* {margin:0; padding:0; outline:0}
+body {font:11px Verdana,Arial; color:#000; background:#fff}
+
+/* Structure
+------------------------------------------*/
+#coolMenu,
+#coolMenu ul {
+	list-style: none;
+}
+#coolMenu {
+	float: left;
+	height:36px;  color:#fff; text-shadow:1px 1px #888; z-index:1000;    background-color: rgb(255,100,100);
+    padding: 10px 0;
+}
+#coolMenu li {position:relative; float:left; width:120px; z-index:1000}
+#coolMenu ul {display:none; position:absolute; font:normal 13px Arial,Verdana; top:36px; left:0;    background-color: rgb(225,75,75); display:none; list-style:none}
+#coolMenu ul li {float:none; border-top:1px solid #ccc; width:120px}
+#coolMenu ul li a, li.menuhover li a, li.menuhover li.menuhover li a {float:none; display:block;     background-color: rgb(225,75,75); height:22px; padding-top:5px}
+#coolMenu ul li a:hover, li.menuhover li a:hover, li.menuhover li.menuhover li a:hover {    background-color: rgb(225,75,75); color:#fff}
+#coolMenu ul li span, li.menuhover li span, li.menuhover li.menuhover li span {float:none; display:block; background:none; height:22px; padding-top:5px}
+#coolMenu ul ul {left:120px; top:0}
+
+#coolMenu li.noJS {font-weight:bold}
+
+
+
